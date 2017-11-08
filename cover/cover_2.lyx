@@ -1,25 +1,27 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass book
 \use_default_options false
-\master ../../TFG.lyx
+\master preface.lyx
 \maintain_unincluded_children false
-\language spanish
+\language english
 \language_package default
 \inputencoding utf8
 \fontencoding default
-\font_roman default
-\font_sans default
-\font_typewriter default
-\font_math auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
+\font_sf_scale 100 100
+\font_tt_scale 100 100
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -28,8 +30,8 @@
 \paperfontsize 11
 \spacing single
 \use_hyperref true
-\pdf_title "\myTitle"
-\pdf_author "\myName (email (en) ugr (punto) es)"
+\pdf_title "\\myTitle"
+\pdf_author "\\myName (email (en) ugr (punto) es)"
 \pdf_keywords "palabra_clave1, palabra_clave2, palabra_clave3, ..."
 \pdf_bookmarks true
 \pdf_bookmarksnumbered false
@@ -70,7 +72,7 @@
 \tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language french
+\quotes_language english
 \papercolumns 1
 \papersides 2
 \paperpagestyle fancy
@@ -85,7 +87,7 @@
 
 \begin_layout Standard
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -98,7 +100,7 @@ begin{titlepage}
 
 
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -111,22 +113,7 @@ par
 
 
 \begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-newlength{
-\backslash
-centeroffset}
-\end_layout
-
-\end_inset
-
- 
-\begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -143,7 +130,7 @@ oddsidemargin}
 
  
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -160,7 +147,7 @@ evensidemargin}
 
  
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -211,6 +198,11 @@ width "100text%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -227,87 +219,78 @@ centering
 \end_inset
 
  
-\begin_inset Graphics
-	filename imagenes/ugr2.png
-	lyxscale 50
-	width 90text%
-
-\end_inset
-
-
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
 
-
+%
+\backslash
+includegraphics[width=0.9
+\backslash
+textwidth]{imagenes/logo_ugr.jpg}
 \backslash
 
 \backslash
 [1.4cm]
 \end_layout
 
+\begin_layout Plain Layout
+
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Plain Layout
-
-\shape smallcaps
-\size larger
-TRABAJO FIN DE GRADO
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
 
-
+%
+\backslash
+textsc{ 
+\backslash
+Large PROYECTO FIN DE CARRERA
 \backslash
 
 \backslash
-[0.2cm]
+[0.2cm]}
 \end_layout
-
-\end_inset
-
-
-\shape default
- 
-\shape smallcaps
- 
-\begin_inset ERT
-status open
 
 \begin_layout Plain Layout
 
-
-\backslash
-myDegree
 \end_layout
 
 \end_inset
 
-
-\shape default
 
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
 
-
+%
+\backslash
+textsc{ INGENIERÍA EN INFORMÁTICA}
 \backslash
 
 \backslash
 [1cm]
 \end_layout
 
+\begin_layout Plain Layout
+
+\end_layout
+
 \end_inset
 
- 
+
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -321,13 +304,64 @@ status open
 \end_inset
 
 
-\series bold
-\size giant
+\begin_inset ERT
+status collapsed
 
-\begin_inset Newline newline
+\begin_layout Plain Layout
+
+% 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace 3.3cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%si el proyecto tiene logo poner aquí
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename img/ugr2.png
+	lyxscale 50
+	width 90text%
+
+\end_inset
+
+ 
+\begin_inset VSpace 0.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+\size giant
 \begin_inset ERT
 status open
 
@@ -340,9 +374,16 @@ myTitle
 
 \end_inset
 
- 
-\size default
- 
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset VSpace 0.1cm
+\end_inset
+
+
 \begin_inset CommandInset line
 LatexCommand rule
 offset "-1ex"
@@ -385,7 +426,7 @@ par
 \end_inset
 
 
-\begin_inset VSpace 1.5cm
+\begin_inset VSpace 2.5cm
 \end_inset
 
  
@@ -415,6 +456,11 @@ width "100text%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -456,7 +502,7 @@ status collapsed
 
 
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -552,15 +598,31 @@ status collapsed
 \backslash
 
 \backslash
-[1cm]
+[2cm]
 \end_layout
 
 \end_inset
 
  
-\begin_inset Graphics
-	filename imagenes/ringo_horiz_color300.tif
-	width 30text%
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%
+\backslash
+includegraphics[width=0.15
+\backslash
+textwidth]{imagenes/tstc.png}
+\backslash
+
+\backslash
+[0.1cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
 
 \end_inset
 
@@ -570,40 +632,53 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
+%
+\backslash
+textsc{Departamento de Teoría de la Señal, Telemática y Comunicaciones}
 \backslash
 
 \backslash
-[0.3cm]
+
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
 
- 
-\shape smallcaps
-Escuela Técnica Superior de Ingenierías Informática y de Telecomunicación
-\shape default
 
-\begin_inset Newline newline
-\end_inset
-
- 
-\shape smallcaps
----
-\shape default
-
-\begin_inset Newline newline
-\end_inset
-
- Granada, 
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
+%
+\backslash
+textsc{---}
+\backslash
 
 \backslash
-monthandyear
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%Granada, mes de 201
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -640,15 +715,24 @@ status collapsed
 
 \begin_layout Plain Layout
 
-%
+
 \backslash
 vspace{
 \backslash
 stretch{2}}
 \end_layout
 
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
 \begin_layout Plain Layout
 
+
+\backslash
+par 
 \end_layout
 
 \end_inset

@@ -1,7 +1,9 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass book
 \begin_preamble
 
@@ -11,26 +13,25 @@
 \usepackage[utf8]{inputenc}
 
 \usepackage{listings}
-\usepackage[spanish]{babel}
+\usepackage[]{babel}
 \usepackage{xspace}
 
 \usepackage{xcolor}         
 \usepackage{sectsty}       
-\definecolor{gris-azul}{rgb}{0.27,0.33,0.415}  
-\definecolor{azul-gris}{rgb}{0.192,0.278,0.4}  
-\definecolor{verde-chulo}{rgb}{0.25,0.5,0.5}  
-\definecolor{verde-chulo2}{rgb}{0,0.4,0.4}  
+\definecolor{grey-blue}{rgb}{0.27,0.33,0.415}  
+\definecolor{blue-grey}{rgb}{0.192,0.278,0.4}  
+\definecolor{cool-green}{rgb}{0.25,0.5,0.5}  
+\definecolor{cool-green-2}{rgb}{0,0.4,0.4}  
 
 \chapterfont{\color{black}}
-%\sectionfont{\color{azul-gris}}
-%\subsectionfont{\color{gris-azul}}
+%\sectionfont{\color{blue-grey}}
+%\subsectionfont{\color{grey-blue}}
 
 
 % \usepackage[style=list, number=none]{glossary} %
 %\usepackage{titlesec}
 %\usepackage{pailatino}
 
-\decimalpoint
 \usepackage{dcolumn}
 \newcolumntype{.}{D{.}{\esperiod}{-1}}
 
@@ -53,13 +54,12 @@
 % ********************************************************************
 % Re-usable information
 % ********************************************************************
-\newcommand{\myTitle}{[TÍTULO DEL TFG]\xspace}
-\newcommand{\MyTitleEnglish}{[TITLE OF TFG]\xspace}
-\newcommand{\myDegree}{[TITULACIÓN]\xspace}
-\newcommand{\myName}{[NOMBRE DEL AUTOR]\xspace}
-\newcommand{\myDNI}{[DNI DEL AUTOR]\xspace}
-\newcommand{\myProf}{[NOMBRE DEL TUTOR 1]\xspace}
-\newcommand{\myOtherProf}{[NOMBRE DEL TUTOR 2]\xspace}
+\newcommand{\myTitle}{[TITLE OF THE THESIS]\xspace}
+\newcommand{\myDegree}{[NAME OF THE DEGREE]\xspace}
+\newcommand{\myName}{[NAME OF THE AUTHORS]\xspace}
+\newcommand{\myPassport}{[PASSPORT NUMBER]\xspace}
+\newcommand{\myProf}{[NAME OF THESIS DIRECTOR 1]\xspace}
+\newcommand{\myOtherProf}{[NAME OF THESIS DIRECTOR 2]\xspace}
 %\newcommand{\mySupervisor}{[NOMBRE DEL SUPERVISOR]\xspace}
 \newcommand{\myFaculty}{Escuela Técnica Superior de Ingenierías Informática y de Telecomunicación\xspace}
 \newcommand{\myFacultyShort}{E.T.S. de Ingenierías Informática y de Telecomunicación\xspace}
@@ -67,13 +67,13 @@
 \newcommand{\myUni}{\protect{Universidad de Granada}\xspace}
 \newcommand{\myLocation}{Granada\xspace}
 \newcommand{\myTime}{\today\xspace}
-\newcommand{\myVersion}{Version 0.1\xspace}
-\newcommand{\monthandyear}{[MES Y AÑO (ej. junio de 2016)]\xspace}
-\newcommand{\finaldate}{[FECHA (ej. 15 de junio de 2016)]\xspace}
+\newcommand{\myVersion}{Version 0.2\xspace}
+\newcommand{\monthandyear}{[MONTH AND YEAR (e.g. June 2017)]\xspace}
+\newcommand{\finaldate}{[DATE (e.g. 15th June 2017)]\xspace}
 
-\usepackage[colorlinks=true, linkcolor=verde-chulo2, urlcolor=blue,citecolor=black,anchorcolor=black,filecolor=black,menucolor=black,runcolor=black]{hyperref}
+\usepackage[colorlinks=true, linkcolor=cool-green-2, urlcolor=blue,citecolor=black,anchorcolor=black,filecolor=black,menucolor=black,runcolor=black]{hyperref}
 \hypersetup{
-pdfauthor = {\myName (email (en) ugr (punto) es)},
+pdfauthor = {\myName (email (at) institutional-domain)},
 pdftitle = {\myTitle},
 pdfsubject = {},
 pdfkeywords = {palabra_clave1, palabra_clave2, palabra_clave3, ...},
@@ -222,20 +222,20 @@ numbers=left
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
-\language spanish
+\language english
 \language_package default
 \inputencoding utf8
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
-\font_math auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
+\font_sf_scale 100 100
+\font_tt_scale 100 100
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -244,8 +244,8 @@ numbers=left
 \paperfontsize 11
 \spacing single
 \use_hyperref false
-\pdf_title "\myTitle"
-\pdf_author "\myName (email (en) ugr (punto) es)"
+\pdf_title "\\myTitle"
+\pdf_author "\\myName (email (en) ugr (punto) es)"
 \pdf_keywords "palabra_clave1, palabra_clave2, palabra_clave3, ..."
 \pdf_bookmarks true
 \pdf_bookmarksnumbered false
@@ -278,11 +278,6 @@ numbers=left
 \suppress_date false
 \justification true
 \use_refstyle 0
-\branch Notas Chemary
-\selected 0
-\filename_suffix 0
-\color #ffff00
-\end_branch
 \index Índice
 \shortcut idx
 \color #008000
@@ -333,7 +328,7 @@ frontmatter %turns off chapter numbering and uses roman numerals for page
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
-filename "txt/portada/portada.lyx"
+filename "cover/cover.lyx"
 
 \end_inset
 
@@ -343,7 +338,35 @@ filename "txt/portada/portada.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
-filename "txt/portada/prefacio.lyx"
+filename "cover/cover_2.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "cover/preface.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "txt/acknowledgements.lyx"
 
 \end_inset
 
@@ -372,7 +395,7 @@ tableofcontents
 
 
 \backslash
-hypersetup{linkcolor=verde-chulo2}
+hypersetup{linkcolor=cool-green-2}
 \end_layout
 
 \begin_layout Plain Layout
@@ -413,127 +436,12 @@ parskip}{5pt} %Space between paragraphs
 \end_inset
 
 
-\begin_inset Branch Notas Chemary
-status collapsed
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-El estilo de las comillas está cambiado, se ve en el apartado idioma de
- la configuración, que las otras no se ven bien
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-NO usar soporte hiperref, usar lo que viene en el preámbulo
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Se ha añadido a hiperref un corchete con opciones de los colores (todos
- en negro menos las páginas web, en azul)
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Se ha añadido el archivo de bibliografía
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Planteable dejar las partes Cuestiones previas
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-La leche, las etiquetas se cambian según dónde ponga el anexo, y reconoce
- las que tiene el documento hijo en el principal, vaya potencia tiene el
- bicho
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Hay que poner en el documento hijo la bibliografía, poner las referencias
- y luego quitarla, para que no salga al final de esa parte
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Planteable dejar las partes Resumen Trabajo Códigos
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
-filename "txt/Introducción.lyx"
+filename "txt/content.lyx"
 
 \end_inset
 
@@ -550,7 +458,8 @@ filename "txt/Introducción.lyx"
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "sample"
+btprint "btPrintAll"
+bibfiles "thesis"
 options "unsrt"
 
 \end_inset

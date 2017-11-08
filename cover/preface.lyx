@@ -1,25 +1,27 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass book
 \use_default_options false
 \master ../../TFG.lyx
 \maintain_unincluded_children false
-\language spanish
+\language english
 \language_package default
 \inputencoding utf8
 \fontencoding default
-\font_roman default
-\font_sans default
-\font_typewriter default
-\font_math auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
+\font_sf_scale 100 100
+\font_tt_scale 100 100
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -28,8 +30,8 @@
 \paperfontsize 11
 \spacing single
 \use_hyperref true
-\pdf_title "\myTitle"
-\pdf_author "\myName (email (en) ugr (punto) es)"
+\pdf_title "\\myTitle"
+\pdf_author "\\myName (email (en) ugr (punto) es)"
 \pdf_keywords "palabra_clave1, palabra_clave2, palabra_clave3, ..."
 \pdf_bookmarks true
 \pdf_bookmarksnumbered false
@@ -70,7 +72,7 @@
 \tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language french
+\quotes_language english
 \papercolumns 1
 \papersides 2
 \paperpagestyle fancy
@@ -85,78 +87,7 @@
 
 \begin_layout Standard
 \begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-%
-\backslash
-thispagestyle{empty}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-%
-\backslash
-cleardoublepage
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-%
-\backslash
-thispagestyle{empty}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "portada_2.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage cleardoublepage
-\end_inset
-
-
-\begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -165,6 +96,10 @@ status collapsed
 thispagestyle{empty}
 \end_layout
 
+\end_inset
+
+
+\begin_inset Separator latexpar
 \end_inset
 
 
@@ -174,7 +109,6 @@ thispagestyle{empty}
 \align center
 
 \series bold
-\size large
 \begin_inset ERT
 status open
 
@@ -183,171 +117,6 @@ status open
 
 \backslash
 myTitle
-\end_layout
-
-\end_inset
-
-
-\size default
-
-\begin_inset Newline newline
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-myName
-\end_layout
-
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-%
-\backslash
-vspace{0.7cm}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-{
-\end_layout
-
-\end_inset
-
-
-\series bold
-Palabras clave
-\series default
-: [PALABRAS CLAVE EN ESPAÑOL (SEPARADAS POR COMA)]
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\noindent
-\begin_inset VSpace 0.7cm
-\end_inset
-
- 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-{
-\end_layout
-
-\end_inset
-
-
-\series bold
-Resumen
-\series default
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\noindent
-\begin_inset CommandInset include
-LatexCommand input
-filename "Abstract.lyx"
-
-\end_inset
-
- 
-\begin_inset Newpage cleardoublepage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-thispagestyle{empty}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-
-\series bold
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-MyTitleEnglish
 \end_layout
 
 \end_inset
@@ -471,7 +240,7 @@ status collapsed
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
-filename "Abstract_en.lyx"
+filename "Abstract.lyx"
 
 \end_inset
 
@@ -570,7 +339,7 @@ status open
 
 
 \backslash
-myDNI
+myPassport
 \end_layout
 
 \end_inset
@@ -900,40 +669,7 @@ myOtherProf
 
 \end_layout
 
-\begin_layout Chapter*
-Agradecimientos
-\end_layout
-
 \begin_layout Standard
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-thispagestyle{empty}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace 1cm
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "Agradecimientos.lyx"
-
-\end_inset
-
 
 \end_layout
 
