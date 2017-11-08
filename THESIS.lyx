@@ -300,6 +300,23 @@ numbers=left
 \begin_body
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Modify document settings (
+\family typewriter
+Document>Settings...
+\family default
+) to set up author name and other relevant parameters.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -461,21 +478,6 @@ LatexCommand bibtex
 btprint "btPrintAll"
 bibfiles "thesis"
 options "unsrt"
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Nota curiosa: solo sale en la bibliografía aquello que menciones, así, se
- puede ir metiendo TODA la bibliografía que pase por tus manos a lo largo
- de tu vida en un solo fichero y nombrar solo algunas de las referencias
- en tu artículo.
- Además, JabRef te permite enlazar cada referencia con su PDF, eso sí, seguramen
-te si se mueve le perderá la pista
-\end_layout
 
 \end_inset
 
